@@ -1,0 +1,52 @@
+Jiaqi Fan 
+A12584051
+cse8b
+1/8/2016
+
+README
+Program Explaintion:
+FunWithIntArray.java 
+This program which make a copy of any number list that is give. 
+And it will find the maximum and minimum number inside the number list.
+It also sort the number list from smallest number to biggest.
+
+Caesar.java
+This program will translate a message in the form of a sequence of characters from 
+ciphertext to plaintext. In other word this program will shift a letter around to
+other letter. For example, letter 'a' the value is 97 and shift it around to 122
+which it will become 'z'.  
+
+Errors in FunWithIntArrays.java
+
+1. public static findMax(int[] array)
+   Problem: missing return type.
+   Fix: public static int findMax(int[] array)
+
+2. min = array[0]
+   Problem: min is not defined
+   Fix: int min = array[0]
+
+3. public static int[] arrayCopy(int array)
+   if (array == null)
+   Problem: array incomparable types: int and null
+   Fix: public static int[] arrayCopy(int[] array)
+
+4. for (int i = 0; i <= array.length; i++)
+   Problem: out of bound error
+   Fix: for (int i = 0; i < array.length; i++)
+
+5. for (int i = 0; i < array.length - 1; ++i) 
+   for (int j = 0; i < array.length - i - 1; j++) 
+   if (array[j] > array[j + 1])
+   Problem: out of bound error
+   Fix: for (int j = 0; j < array.length - i - 1; j++)
+
+6. if (array != null)
+   Problem: return null
+   Fix: if (array == null)
+
+7. result[i++] = array[i];
+   Problem: copy array missing numbers
+   Fix:  result[i] = array[i];
+
+
